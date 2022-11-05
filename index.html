@@ -48,7 +48,7 @@
                 <div class="col-md-8 m-auto">
                     <div class="input-group d-flex flex-nowrap position-relative overflow-hidden">
                         <div class="form-outline w-100">
-                            <input type="search" id="form1" onkeyup="search(this.value)" class="input-box"
+                            <input type="search" id="form1" onkeyup="search(this.value.toLocaleLowerCase())" class="input-box"
                                 placeholder="Find your location.." />
                         </div>
                         <button type="button" class="btnFind  position-absolute end-0 ">
