@@ -150,3 +150,9 @@ function checkRegx(place) {
   let twonRegx = /[a-z]{2,}/;
   return twonRegx.test(place);
 }
+// function to change brtween days in the small devices
+$(".buttons button").click(function(){
+  $(".weatherBoxes").css("display","none");
+  $(`#box${Number(this.innerHTML)}`).css("display","block");
+
+})

@@ -133,6 +133,9 @@ input[placeholder] {
         display: none;
 
     }
+    .buttons{
+        display: block;
+    }
 }
 
 @media (min-width: 770px) {
@@ -144,5 +147,8 @@ input[placeholder] {
     #box3 {
         display: block;
 
+    }
+    .buttons{
+        display: none;
     }
 }
