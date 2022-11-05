@@ -1,0 +1,148 @@
+:root {
+    --textColor: rgb(23, 162, 184)
+}
+
+body {
+
+    background-image: url(../Images/1217207.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.63);
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+/**********************************************navbar style*************************************************/
+nav {
+    z-index: 999999999999999;
+}
+
+span img {
+    width: 8%;
+}
+
+.nav-link {
+    color: var(--textColor);
+    transition: all 0.5s;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/**********************************************input style*************************************************/
+
+input[placeholder] {
+    padding-left: 1rem;
+    background-color: #323544;
+    color: white;
+    border: unset;
+}
+
+.input-box {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 3;
+    border-radius: .375rem;
+    border: unset;
+    /* box-shadow: 0px 0px 10px rgba(23, 162, 184,0.4); */
+}
+
+.btnFind {
+    background-color: var(--textColor);
+    border: unset;
+    border-radius: .375rem;
+    line-height: 3;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/**********************************************weathe box style*************************************************/
+.num {
+    font-size: 6rem;
+}
+
+.WaitingLayer {
+    z-index: 99999;
+}
+
+.weatherstatus {
+    color: var(--textColor);
+}
+
+.weatherIocns i {
+    color: gray
+}
+
+.weatherIocns span {
+    color: white
+}
+
+.boxHeader2 {
+    background-color: #222530;
+}
+
+.num2 {
+    font-size: 3rem;
+}
+
+.num3 {
+    font-size: 1.5rem;
+}
+
+.weatherBox1 {
+    height: 400px;
+    background-color: #323544;
+    color: white;
+}
+
+.weatherBox2 {
+    height: 400px;
+    background-color: #262936;
+    color: white;
+}
+
+.weatherBox3 {
+    height: 400px;
+    background-color: #323544;
+    color: white;
+}
+
+.boxContent img {
+    width: 10%;
+}
+
+
+/* Small  (landscape phones, 0px and up)*/
+@media (min-width: 0px) {
+    #box2 {
+        display: none;
+
+    }
+
+    #box3 {
+        display: none;
+
+    }
+}
+
+@media (min-width: 770px) {
+    #box2 {
+        display: block;
+
+    }
+
+    #box3 {
+        display: block;
+
+    }
+}

@@ -1,0 +1,96 @@
+<!-- This code was written by Mohamad Amr Shehab -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZI Weather</title>
+    <link rel="icon" href="Images/cloud-solid.svg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-------------------------------------the navbar------------------------------------------------>
+    <header class="vh-100">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+            <div class="container">
+                <a href="index.html" class="text-dark w-50 text-decoration-none">
+                    <span><img src="Images/cloudy-day.png" alt="cloud" class="me-3 pb-3"></span>
+                    <span class="fs-4 fw-bolder text-white">IzI Weather</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="#" class="nav-link " aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Live Cameras</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Photos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-------------------------------------search input------------------------------------------------>
+
+    <div class="layer d-flex justify-content-center align-items-end ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    <div class="input-group d-flex flex-nowrap position-relative overflow-hidden">
+                        <div class="form-outline w-100">
+                            <input type="search" id="form1" onkeyup="search(this.value)" class="input-box"
+                                placeholder="Find your location.." />
+                        </div>
+                        <button type="button" class="btnFind  position-absolute end-0 ">
+                            <span>Find</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------display weather box------------------------------------------------>
+
+            <div class="row g-0 rounded-2 position-relative overflow-hidden my-5">
+                <div class="WaitingLayer position-absolute top-0  bottom-0 end-0 start-0 bg-dark bg-opacity-75">
+                    <div class="d-flex justify-content-center align-items-center    w-100 h-100"> <i
+                            class="fa-solid fa-spinner fa-spin-pulse fa-3x text-white"></i>
+                    </div>
+                </div>
+                <div class="col-md-4 m-auto" id="box1">
+                    <div class="weatherBox1 ">
+                        <div class="bg-dark text-white px-3 py-2 d-flex justify-content-between">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 m-auto " id="box2">
+                    <div class="weatherBox2  ">
+                        <div class="boxHeader2 text-white px-3 py-2 text-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 m-auto" id="box3">
+                    <div class="weatherBox3">
+                        <div class="bg-dark text-white px-3 py-2 text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
