@@ -56,7 +56,7 @@ function displayWeather() {
 function search(city = "cairo") {
   if (checkRegx(city)) {
     let req = new XMLHttpRequest();
-    req.open("GET", `https://api.weatherapi.com/v1/forecast.json?key= 80129535bdac466793b92326220511&q=${city}&days=14`)
+    req.open("GET", `https://api.weatherapi.com/v1/forecast.json?key=71657b6eb9924649841125912232501&q=${city}&days=14`)
     req.send()
     req.addEventListener("loadend", function () {
       if (req.status == 200) {
